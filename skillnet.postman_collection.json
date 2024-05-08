@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "856387de-d3ff-4f64-9719-0b72d88abaf2",
+		"name": "skillnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25189060"
+	},
+	"item": [
+		{
+			"name": "paciente",
+			"item": [
+				{
+					"name": "get paciente by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASE_URL}}/paciente/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete paciente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{BASE_URL}}/paciente/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update paciente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"\",\r\n    \"lastname\":\"\",\r\n    \"age\":12,\r\n    \"document\":\"\",\r\n    \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/paciente/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"\",\r\n    \"lastname\":\"\",\r\n    \"age\":12,\r\n    \"document\":\"\",\r\n    \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/paciente"
+					},
+					"response": []
+				},
+				{
+					"name": "get pacientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASE_URL}}/pacientes"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "doctor",
+			"item": [
+				{
+					"name": "get doctor by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASE_URL}}/doctor/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete doctor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{BASE_URL}}/doctor/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update doctor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"\",\r\n    \"lastname\":\"\",\r\n    \"age\":12,\r\n    \"document\":\"\",\r\n    \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/doctor/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create doctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"\",\r\n    \"lastname\":\"\",\r\n    \"age\":12,\r\n    \"document\":\"\",\r\n    \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/doctor"
+					},
+					"response": []
+				},
+				{
+					"name": "get doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASE_URL}}/doctors"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cita",
+			"item": [
+				{
+					"name": "get cita by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASE_URL}}/cita/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete cita",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{BASE_URL}}/cita/1"
+					},
+					"response": []
+				},
+				{
+					"name": "update cita",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"\",\r\n    \"paciente\":1,\r\n    \"doctor\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/cita/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create cita",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"\",\r\n    \"paciente\":1,\r\n    \"doctor\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/cita"
+					},
+					"response": []
+				},
+				{
+					"name": "get citas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASE_URL}}/citas"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://127.0.0.1:5001/api/v1",
+			"type": "string"
+		}
+	]
+}
